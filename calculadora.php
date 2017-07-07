@@ -1,4 +1,3 @@
-calculadora
 <?php
 class Calculator
 {
