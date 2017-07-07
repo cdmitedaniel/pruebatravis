@@ -1,9 +1,9 @@
 <?php
-
-class HelloWorldTest extends WP_UnitTestCase {
-
-function test_hello_world() {
-  $this->assertEquals("Hello World!" == hello_world());
+class Calculator
+{
+public function add($a,$b)
+{
+return $a + $b;
 }
 }
 
