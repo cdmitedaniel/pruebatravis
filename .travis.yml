@@ -14,4 +14,4 @@ before_install:
 
 before_script: true
 
-script: phpunit carlos.php
+script: phpunit test.php
