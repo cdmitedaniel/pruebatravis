@@ -1,9 +1,16 @@
 <?php
-class Calculator
+require 'calculadora.php';
+class CalculatorTests extends PHPUnit_Framework_TestCase
 {
-public function add($a,$b)
+private $calculator;
+protected function setUp()
 {
-return $a + $b;
+$this->calculator= new Calculator();
+}
+public function testAdd()
+{
+$result=$this->calculator->add(1,2);
+$this->assertEquals(3,$result);
 }
 }
 
